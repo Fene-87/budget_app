@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_30_073218) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_30_132826) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,6 +19,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_30_073218) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "users_id"
+    t.index ["users_id"], name: "index_groups_on_users_id"
+  end
+
+  create_table "groups_operations", id: false, force: :cascade do |t|
+    t.bigint "operation_id", null: false
+    t.bigint "group_id", null: false
+    t.index ["group_id", "operation_id"], name: "index_groups_operations_on_group_id_and_operation_id"
+    t.index ["operation_id", "group_id"], name: "index_groups_operations_on_operation_id_and_group_id"
   end
 
   create_table "operations", force: :cascade do |t|
@@ -27,6 +36,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_30_073218) do
     t.float "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "users_id"
+    t.index ["users_id"], name: "index_operations_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|
