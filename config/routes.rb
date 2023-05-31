@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'operations/index'
+  get 'operations/new'
   devise_for :users
   root 'groups#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
