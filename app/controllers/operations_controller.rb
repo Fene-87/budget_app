@@ -1,6 +1,5 @@
 class OperationsController < ApplicationController
-  def index
-  end
+  def index; end
 
   def new
     @group = Group.find(params[:group_id])
