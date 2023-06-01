@@ -2,8 +2,10 @@
 <ul>
   <% @groups.each_with_index do |group, index| %>
     <li>
-      <p><%= group.name %></p>
-      <p></p>
+      <%= link_to group_operations_path(group) do%>
+        <p><%= group.name %></p>
+        <p></p>
+      <% end %>
     </li>
   <% end %>
 </ul>
