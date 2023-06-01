@@ -3,6 +3,24 @@
   padding: 0;
 }
 
+.field {
+  margin-top: 5px;
+}
+
+.label {
+  display: none;
+}
+
+.input {
+  width: 350px;
+  padding: 10px;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
 /* Splash Screen */
 .splash_container {
   display: flex;
@@ -55,3 +73,75 @@
   color: #c0c0c0;
 }
 /* Splash Screen */
+
+/* signup and login page*/
+.registration_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f1;
+  height: 100vh;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.reg_bar {
+  background-color: #3778c2;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.reg_bar_content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.reg_bar_header {
+  color: #fff;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+}
+
+.form_container {
+  margin-top: 2rem;
+}
+
+.submit_btn {
+  margin-top: 40px;
+  padding: 10px;
+  width: 370px;
+  background-color: #3778c2;
+  border: none;
+  border-radius: 5px;
+}
+
+.render_submit_btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 350px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.render_login_btn {
+  margin-top: 20px;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.checkbox_text {
+  margin-top: 10px;
+}
+
+/* signup and login page*/
