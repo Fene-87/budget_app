@@ -23,6 +23,14 @@ class OperationsController < ApplicationController
     end
   end
 
+  def destroy
+    @operation = Operation.find(params[:id])
+    @operation.destroy
+
+    flash[:notice] = 'Transaction has been successfully deleted'
+    redirect_to group_operations_path
+  end
+
   private
 
   def operation_params

@@ -4,6 +4,9 @@
     <li>
       <%= operation.name %>
       <%= operation.amount %>
+      <div>
+        <%= button_to "Delete", group_operation_path(@group, operation), method: :delete, data: { turbo_frame: "operations" } %>
+      </div>
     </li>
   <% end %>
 </ul>
