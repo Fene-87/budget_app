@@ -1,5 +1,8 @@
 class OperationsController < ApplicationController
-  def index; end
+  def index
+    @group = Group.find(params[:group_id])
+    @operations = @group.operations
+  end
 
   def new
     @group = Group.find(params[:group_id])
@@ -7,9 +10,10 @@ class OperationsController < ApplicationController
   end
 
   def create
+    @group = Group.find(params[:group_id])
     @operation = Operation.new(operation_params)
     @operation.author_id = current_user.id
-    @operation.groups = Group.where(id: params[:operation][:group_ids]).includes([:user])
+    @operation.groups << @group
 
     if @operation.save
       flash[:success] = 'Transaction created successfully'
