@@ -145,3 +145,33 @@
 }
 
 /* signup and login page*/
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3778c2;
+  padding: 20px 10px;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.navbar_header {
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.nav_signout {
+  margin-right: 10px;
+}
+
+.nav_signout_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_signout_icon {
+  color: #fff;
+}
+/* Navbar styling */
