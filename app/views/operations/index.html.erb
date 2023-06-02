@@ -1,5 +1,11 @@
 <section class="main_section">
 <%= render 'shared/navbar' %>
+
+<div class="total_amount">
+  <p>Total: </p>
+  <span>Ksh<%= @operations.sum(:amount)%></span>
+</div>
+
 <ul class="categories_list">
   <% @operations.each_with_index do |operation, index| %>
     <li class="category_item">
@@ -19,7 +25,7 @@
   <% end %>
 </ul>
 
-<div class="btn_div">
+<div class="btn_div new_transaction">
   <button class="new_category_btn"><%= link_to 'New Transaction', new_group_operation_path, class: "new_category_link" %></button>
 </div>
 </section>

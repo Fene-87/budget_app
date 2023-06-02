@@ -1,8 +1,11 @@
 <nav class="navbar">
   <i class="fa-solid fa-bars icon"></i>
+  
   <p class="navbar_header">
-    <% if controller_name == 'groups' %>
+    <% if controller_name == 'groups' && action_name == 'index' %>
       CATEGORIES
+    <% elsif controller_name == 'groups' && action_name == 'new' %>
+      NEW CATEGORY
     <% elsif controller_name == 'operations' && action_name == 'index' %>
       TRANSACTIONS
     <% else controller_name == 'operations' && action_name == 'new' %>

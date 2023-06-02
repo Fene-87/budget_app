@@ -263,3 +263,36 @@
   gap: 5px;
 }
 /* Categories Page Styling */
+
+/* Transactions Page Styling */
+.total_amount {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 15px 3rem;
+  font-size: 25px;
+  background-color: #fff;
+  gap: 5px;
+}
+
+.new_transaction {
+  margin-top: 15rem;
+}
+
+.create_btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 370px;
+  background-color: #3778c2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.categories_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Transactions Page Styling */
