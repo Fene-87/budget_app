@@ -1,5 +1,15 @@
 <nav class="navbar">
-  <i class="fa-solid fa-bars icon"></i>
+  <% if controller_name == 'groups' && action_name == 'index' %> 
+    <i class="fa-solid fa-bars icon"></i>
+  <% elsif controller_name == 'groups' && action_name == 'new' || controller_name == 'operations' && action_name == 'index' %>
+    <%= link_to groups_path, class: "login_link" do %>
+      <i class="fa-solid fa-arrow-left icon"></i>
+    <% end %>
+  <% elsif controller_name == 'operations' && action_name == 'new' %>
+      <%= link_to group_operations_path, class: "login_link" do %>
+        <i class="fa-solid fa-arrow-left icon"></i>
+      <% end %>
+  <% end %>
   
   <p class="navbar_header">
     <% if controller_name == 'groups' && action_name == 'index' %>
