@@ -295,4 +295,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+.delete_category {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 3rem;
+}
+
+.text_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  border: 3px solid #dc343b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
 /* Transactions Page Styling */

@@ -7,7 +7,7 @@
     <% elsif controller_name == 'groups' && action_name == 'new' %>
       NEW CATEGORY
     <% elsif controller_name == 'operations' && action_name == 'index' %>
-      TRANSACTIONS
+      <%= @group.name.upcase %>
     <% else controller_name == 'operations' && action_name == 'new' %>
       CREATE TRANSACTION
     <% end %>

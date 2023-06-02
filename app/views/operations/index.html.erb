@@ -6,6 +6,15 @@
   <span>Ksh<%= @operations.sum(:amount)%></span>
 </div>
 
+<div class="delete_category">
+  <%= button_to group_path(@group), method: :delete, data: { turbo_frame: 'groups' }, class: "delete_btn" do %>
+  <div class="text_icon">
+    <i class="fa-solid fa-trash-can delete_icon"></i>
+    <p>Delete Category</p>
+  </div>
+  <% end %>
+</div>
+
 <ul class="categories_list">
   <% @operations.each_with_index do |operation, index| %>
     <li class="category_item">
