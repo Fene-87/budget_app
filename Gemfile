@@ -79,3 +79,5 @@ gem 'dotenv-rails', groups: %i[development test]
 gem 'devise'
 
 gem 'font-awesome-rails'
+
+gem 'rails-controller-testing'
