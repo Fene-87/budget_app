@@ -6,12 +6,13 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
     - [🚀 Live Demo](#live-demo)
+    - [🎬 Video Description](#video-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Author ](#-authors-)
+  - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -44,6 +45,14 @@
 Click on the link to view the app.
 
 - [Live Demo](https://budget-tracker-lkkh.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Video Description <a name="live-demo"></a>
+
+Click on the link to view the video description.
+
+- [Video Description]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
