@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "Groups", type: :request do
+RSpec.describe 'Groups', type: :request do
   include Devise::Test::IntegrationHelpers
 
-  describe "GET /groups" do
+  describe 'GET /groups' do
     before(:each) do
       @user = User.create(id: 1, name: 'Mark', email: 'marcos@gmail.com', password: 'abcdef')
       @user.save
@@ -11,7 +11,7 @@ RSpec.describe "Groups", type: :request do
       @group = Group.create(name: 'Electricity', icon: 'https://unsplash.com/photos/oL3-V8xhqlI', user_id: @user.id)
     end
 
-    it "Should return http success" do
+    it 'Should return http success' do
       get groups_path
       expect(response).to have_http_status(:success)
     end
