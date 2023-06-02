@@ -52,7 +52,7 @@ Click on the link to view the app.
 
 Click on the link to view the video description.
 
-- [Video Description]()
+- [Video Description](https://www.loom.com/share/eac704409e264b09ab2b896afe1a2302)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
