@@ -88,3 +88,4 @@ production:
   database: <%= ENV["BUDGET_APP_DATABASE_NAME"] %>
   username: <%= ENV["BUDGET_APP_DATABASE_USERNAME"] %>
   password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+  host: dpg-cht6efl269vccp3qd5p0-a
